@@ -1,0 +1,157 @@
+#nav {
+    display: grid;
+    grid-template-rows: 90px 1fr;
+    height: 100vh;
+}
+
+#menu {
+    background-color: #0f0f0f;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu label {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 50px;
+    text-decoration: none;
+    margin-left: 27.5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.menu-social {
+    margin-top: 215px;
+    margin-left: 34px;
+}
+
+.menu-social a {
+    display: block;
+    font-size: 18px;
+    color: #252525;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+
+#menu-aberto {
+    position: absolute;
+    width: 270px;
+    height: 100%;
+    left: -280px;
+    background-color: #fff;
+    z-index: 90;
+}
+
+#menu-toggle:checked~#menu-aberto {
+    left: 0;
+}
+
+.menu-aberto-topo {
+    display: flex;
+}
+
+.menu-aberto-fechar {
+    background-color: #0f0f0f;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    flex-shrink: 0;
+}
+
+#menu-toggle:checked {
+    position: absolute;
+    z-index: 99;
+    display: block;
+    width: 90px;
+    height: 90px;
+    left: 0;
+    pointer-events: all;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.site-logo {
+    background: #2916e0;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.main-menu ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 120px;
+}
+
+.main-menu ul li {
+    display: block;
+}
+
+.main-menu ul li a {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    color: #b2b2b2;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.main-menu ul li:hover a {
+    color: #2916e0;
+}
+
+.sm-social {
+    margin-left: 100px;
+}
+
+.sm-footer {
+    position: absolute;
+    left: 0;
+    bottom: 7vh;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.sm-socail a {
+    font-size: 18px;
+    color: #b2b2b2;
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+.copyright-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: #b2b2b2;
+    margin-top: 10px;
+}
+
+.copyright-text p {
+    font-size: 15px;
+    color: #636363;
+    line-height: 1.8;
+}
+
+.ti-heart {
+    color: red;
+}
+
+.copyright-text a {
+    text-decoration: none;
+    color: #b2b2b2;
+}
